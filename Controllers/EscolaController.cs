@@ -41,6 +41,36 @@ namespace MvcDB.Controllers
             return View(a);
         }
 
+
+        public IActionResult Editar(int id)
+        {
+
+            var aluno = _Context.Alunos.Find(id);
+            if (aluno == null)
+                return NotFound();
+            else
+                return View(aluno);
+        }
+
+        [HttpPost]
+        public IActionResult Editar(Aluno a)
+        {
+            var aluno = _Context.Alunos.Find(a.Id);
+
+            if (aluno != null)
+            {
+                aluno.Nome = a.Nome;
+                aluno.Serie = a.Serie;
+                aluno.Idade = a.Idade;
+                aluno.CPF = a.CPF;
+                _Context.Update(aluno);
+                _Context.SaveChanges();
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(a);
+
+        }
         public IActionResult Deletar()
         {
 

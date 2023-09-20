@@ -2852,11 +2852,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ruanl\\OneDrive\\Desktop\\estudo\\MvcDB\\MvcDB.csproj",
+      "projectUniqueName": "c:\\Users\\ruanl\\OneDrive\\Desktop\\git\\f\\MVC_DB\\MvcDB.csproj",
       "projectName": "MvcDB",
-      "projectPath": "C:\\Users\\ruanl\\OneDrive\\Desktop\\estudo\\MvcDB\\MvcDB.csproj",
+      "projectPath": "c:\\Users\\ruanl\\OneDrive\\Desktop\\git\\f\\MVC_DB\\MvcDB.csproj",
       "packagesPath": "C:\\Users\\ruanl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ruanl\\OneDrive\\Desktop\\estudo\\MvcDB\\obj\\",
+      "outputPath": "c:\\Users\\ruanl\\OneDrive\\Desktop\\git\\f\\MVC_DB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ruanl\\AppData\\Roaming\\NuGet\\NuGet.Config",

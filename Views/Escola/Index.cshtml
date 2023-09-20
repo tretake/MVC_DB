@@ -54,9 +54,9 @@
                     @Html.DisplayFor(model => registro.CPF)
                 </td>
                 <td>
-                    <a asp-action="Editar" asp-route-id="registro.Id">Editar</a> |
-                    <a asp-action="Detalhes" asp-route-id="registro.Id">Detalhes</a> |
-                    <a asp-action="Deletar" asp-route-id="registro.Id">Deletar</a>
+                    <a asp-action="Editar" asp-route-id="@registro.Id">Editar</a> |
+                    <a asp-action="Detalhes" asp-route-id="@registro.Id">Detalhes</a> |
+                    <a asp-action="Deletar" asp-route-id="@registro.Id">Deletar</a>
                 </td>
 
             </tr>

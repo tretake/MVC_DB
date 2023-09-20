@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\ruanl\\OneDrive\\Desktop\\estudo\\MvcDB\\MvcDB.csproj": {}
+    "C:\\Users\\ruanl\\OneDrive\\Desktop\\git\\f\\MVC_DB\\MvcDB.csproj": {}
   },
   "projects": {
-    "c:\\Users\\ruanl\\OneDrive\\Desktop\\estudo\\MvcDB\\MvcDB.csproj": {
+    "C:\\Users\\ruanl\\OneDrive\\Desktop\\git\\f\\MVC_DB\\MvcDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ruanl\\OneDrive\\Desktop\\estudo\\MvcDB\\MvcDB.csproj",
+        "projectUniqueName": "C:\\Users\\ruanl\\OneDrive\\Desktop\\git\\f\\MVC_DB\\MvcDB.csproj",
         "projectName": "MvcDB",
-        "projectPath": "c:\\Users\\ruanl\\OneDrive\\Desktop\\estudo\\MvcDB\\MvcDB.csproj",
+        "projectPath": "C:\\Users\\ruanl\\OneDrive\\Desktop\\git\\f\\MVC_DB\\MvcDB.csproj",
         "packagesPath": "C:\\Users\\ruanl\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ruanl\\OneDrive\\Desktop\\estudo\\MvcDB\\obj\\",
+        "outputPath": "C:\\Users\\ruanl\\OneDrive\\Desktop\\git\\f\\MVC_DB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ruanl\\AppData\\Roaming\\NuGet\\NuGet.Config",

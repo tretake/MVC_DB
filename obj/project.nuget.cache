@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aqk8/75hf01ewfVP7eSDvS0zDLEngafRZz2yrzC8TLdR6UDXfjTmVeG4sUil/zexrXz4aprt5kkqggQ5L16kYg==",
+  "dgSpecHash": "O42LPJfpVnmN0/ffJ2Pa9jheC5yM+ngLeMOfjt6hG1cT+fC5sSuVx6lVqIWC5OPQHYV/Vd8RCSJnNaSRuxm89Q==",
   "success": true,
-  "projectFilePath": "c:\\Users\\ruanl\\OneDrive\\Desktop\\estudo\\MvcDB\\MvcDB.csproj",
+  "projectFilePath": "C:\\Users\\ruanl\\OneDrive\\Desktop\\git\\f\\MVC_DB\\MvcDB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ruanl\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\ruanl\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

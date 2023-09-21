@@ -71,8 +71,35 @@ namespace MvcDB.Controllers
             return View(a);
 
         }
-        public IActionResult Deletar()
+
+        public IActionResult Detalhes(int id)
         {
+            var aluno = _Context.Alunos.Find(id);
+            if (aluno == null)
+                return NotFound();
+
+            return View(aluno);
+        }
+
+        public IActionResult Deletar(int id)
+        {
+            var aluno = _Context.Alunos.Find(id);
+            if (aluno == null)
+                return NotFound();
+            return View(aluno);
+        }
+
+        [HttpPost]
+        public IActionResult Deletar(Aluno a)
+        {
+            var aluno = _Context.Alunos.Find(a.Id);
+
+            if (aluno == null)
+                return NotFound();
+
+            _Context.Alunos.Remove(aluno);
+            _Context.SaveChanges();
+
 
             return RedirectToAction(nameof(Index));
         }

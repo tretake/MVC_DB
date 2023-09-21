@@ -1,0 +1,43 @@
+@model MvcDB.Models.Aluno
+
+@{
+    ViewData["Title"] = "Detalhes aluno";
+}
+
+<h1>Detalhes</h1>
+
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.Nome)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Nome)
+        </dt>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.Serie)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Serie)
+        </dt>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.Idade)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Idade)
+        </dt>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.CPF)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.CPF)
+        </dt>
+    </dl>
+</div>
+
+<a asp-action="Editar" asp-route-id="@Model.Id">Editar</a> |
+<a asp-action="Index">Voltar</a>

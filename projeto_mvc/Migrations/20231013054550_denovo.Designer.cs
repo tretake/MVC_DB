@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using projeto_mvc.Data;
 
@@ -11,9 +12,11 @@ using projeto_mvc.Data;
 namespace projeto_mvc.Migrations
 {
     [DbContext(typeof(ProjetoContext))]
-    partial class ProjetoContextModelSnapshot : ModelSnapshot
+    [Migration("20231013054550_denovo")]
+    partial class denovo
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

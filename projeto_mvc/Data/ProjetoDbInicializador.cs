@@ -98,20 +98,20 @@ namespace projeto_mvc.Data
                     {
                         new Plataforma_Jogo()
                         {
-                            IdPlataforma = 2,
-                            IdJogo = 1
+                            PlataformaId = 2,
+                            JogoId = 2
                         },
                         new Plataforma_Jogo()
                         {
-                            IdPlataforma = 1,
-                            IdJogo = 2
+                            PlataformaId = 1,
+                            JogoId = 3
 
                         },
                         new Plataforma_Jogo()
                         {
-                            
-                            IdPlataforma = 2,
-                            IdJogo = 3
+
+                            PlataformaId = 2,
+                            JogoId = 4
                         }
                     });
                     context.SaveChanges();

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using projeto_mvc.Data;
 
 namespace projeto_mvc.Controllers
@@ -13,7 +14,7 @@ namespace projeto_mvc.Controllers
 
         public IActionResult Index()
         {
-            var dados = _context.Jogos.ToList();
+            var dados = _context.Jogos.Include(n => n.desenvolvedor).ToList();
             return View(dados);
         }
     }

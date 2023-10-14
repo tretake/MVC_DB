@@ -15,15 +15,17 @@ namespace projeto_mvc.Models
 
         //RELAÇÕES
 
-        //PLATAFORMA
-        public List<Plataforma_Jogo> plataforma_jogos { get; set; }
-        public List<Plataforma> plataformas { get; set; }
-
+      
         //DEVELOPER
         public int Id_Dev {  get; set; }
 
         [ForeignKey("Id_Dev")]
         public Desenvolvedor desenvolvedor { get; set; }
+
+
+        //PLATAFORMA
+        public List<Plataforma_Jogo> plataforma_jogos { get; set; }
+        public List<Plataforma> plataformas { get; set; }
 
 
     }

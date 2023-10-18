@@ -14,7 +14,7 @@ namespace projeto_mvc.Controllers
 
         public IActionResult Index()
         {
-            var dados = _context.Jogos.Include(n => n.desenvolvedor).ToList();
+            var dados = _context.Jogos.Include(n => n.desenvolvedor).Include(n => n.plataformas).ToList();
             return View(dados);
         }
     }

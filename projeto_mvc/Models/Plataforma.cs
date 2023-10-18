@@ -18,14 +18,5 @@ namespace projeto_mvc.Models
         //JOGO
         public List<Plataforma_Jogo> plataforma_jogos { get; set; }
         public List<Jogo> jogos { get; set; }
-
-        /*
-        //DEVELOPER
-        public int Id_Dev { get; set; }
-
-        [ForeignKey("Id_Dev")]
-        public Desenvolvedor desenvolvedor { get; set; }*/
-
-
     }
 }

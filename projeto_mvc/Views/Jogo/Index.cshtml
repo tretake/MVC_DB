@@ -13,6 +13,7 @@
                 <th>@Html.DisplayNameFor(model => model.Nome)</th>
                 <th>@Html.DisplayNameFor(model => model.DataLancamento)</th>
                 <th>@Html.DisplayNameFor(model => model.Id_Dev)</th>
+                <th>plataformas</th>
                 <th>Opções</th>
             </thead>
             <tbody>
@@ -26,7 +27,6 @@
                         <td class="align-middle">@Html.DisplayFor(modelIten => registro.DataLancamento)</td>
                         <td class="align-middle">
                             <img width="100" src="@registro.desenvolvedor.LogoImg">
-                            
                             </td>
 
                         <td class="align-middle">
@@ -34,7 +34,6 @@
                             <a class="btn btn-info"><i class="bi bi-eye"></i>Detalhes</a> |
                             <a class="btn btn-danger text-white"><i class="bi bi-trash"></i>Deletar</a>
                         </td>
-
                     </tr>
                 }
             </tbody>

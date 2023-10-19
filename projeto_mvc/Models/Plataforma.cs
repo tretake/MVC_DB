@@ -16,7 +16,7 @@ namespace projeto_mvc.Models
         //RELAÇÕES
 
         //JOGO
-        public List<Plataforma_Jogo> plataforma_jogos { get; set; }
-        public List<Jogo> jogos { get; set; }
+        
+        public List<Jogo>? jogos { get; set; }
     }
 }

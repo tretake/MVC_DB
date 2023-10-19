@@ -26,7 +26,7 @@ namespace projeto_mvc.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create([Bind("CapaImg,Nome,DataLancamento,Id_Dev")] Jogo Pjogo)
+        public IActionResult Create([Bind("CapaImg,Nome,DataLancamento,Id_Dev,Id_Plataforma")] Jogo Pjogo)
 		{
             if(!ModelState.IsValid)
             {

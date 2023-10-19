@@ -27,12 +27,12 @@ namespace projeto_mvc.Models
 		public int Id_Dev {  get; set; }
 
         [ForeignKey("Id_Dev")]
-        public Desenvolvedor desenvolvedor { get; set; }
+        public Desenvolvedor? desenvolvedor { get; set; }
 
-
-        //PLATAFORMA
-        public List<Plataforma_Jogo> plataforma_jogos { get; set; }
-        public List<Plataforma> plataformas { get; set; }
+		[Required(ErrorMessage = "jogo precias de uma plataforma")]
+		public int Id_Plataforma { get; set; }
+		[ForeignKey("Id_Plataforma")]
+		public Plataforma? plataforma { get; set; }
 
 
     }

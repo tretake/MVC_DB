@@ -12,6 +12,7 @@
             <th>@Html.DisplayNameFor(model => model.LogoImg)</th>
             <th>@Html.DisplayNameFor(model => model.Nome)</th>
             <th>@Html.DisplayNameFor(model => model.DataLancamento)</th>
+            <th>@Html.DisplayNameFor(model => model.Desenvolvedor)</th>
             <th>Opções</th>
             </thead>
             <tbody>
@@ -23,6 +24,7 @@
                         </td>
                         <td class="align-middle">@Html.DisplayFor(modelIten => registro.Nome)</td>
                         <td class="align-middle">@Html.DisplayFor(modelIten => registro.DataLancamento)</td>
+                        <td class="align-middle">@Html.DisplayFor(modelIten => registro.Desenvolvedor)</td>
                         <td class="align-middle">
                             <a class="btn btn-outline-primary"><i class="bi bi-pencil-square"></i>Editar</a> |
                             <a class="btn btn-info"><i class="bi bi-eye"></i>Detalhes</a> |
@@ -34,4 +36,8 @@
             </tbody>
         </table>
     </div>
+</div>
+
+<div style="position: fixed; bottom: 25px; right: 25px" class="white-text">
+    <a asp-action="Create" class="btn btn-success"> <i class="bi-plus-circle"></i> adicionar novo</a>
 </div>

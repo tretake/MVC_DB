@@ -14,19 +14,6 @@ namespace projeto_mvc.Data
         {
 
             
-            
-            modelBuilder.Entity<Plataforma_Jogo>().HasKey( pj => new
-            {
-                pj.JogoId,
-                pj.PlataformaId
-            });
-            
-            modelBuilder.Entity<Plataforma_Jogo>().HasOne(j => j.jogo).WithMany(pj => pj.plataforma_jogos)
-                .HasForeignKey(j => j.JogoId).OnDelete(DeleteBehavior.Restrict); 
-
-            modelBuilder.Entity<Plataforma_Jogo>().HasOne(p => p.plataforma).WithMany(pj => pj.plataforma_jogos)
-                .HasForeignKey(p => p.PlataformaId).OnDelete(DeleteBehavior.Restrict); 
-            
             base.OnModelCreating(modelBuilder);
         }
 
@@ -35,7 +22,7 @@ namespace projeto_mvc.Data
         public DbSet<Desenvolvedor> Desenvolvedores { get; set; }
         public DbSet<Jogo> Jogos { get; set; }
         public DbSet<Plataforma> Plataformas { get; set; }
-        public DbSet<Plataforma_Jogo> PlataformaJogos { get; set; }
+        
 
     }
 }

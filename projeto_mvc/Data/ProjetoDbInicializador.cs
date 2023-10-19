@@ -34,36 +34,7 @@ namespace projeto_mvc.Data
                     context.SaveChanges();
                 }
 
-                //Jogo
-                if (!context.Jogos.Any())
-                {
-                    context.Jogos.AddRange(new List<Jogo>()
-                    {
-                        new Jogo()
-                        {
-                            CapaImg = "https://cdn.mobygames.com/covers/4046688-the-legend-of-zelda-majoras-mask-nintendo-64-front-cover.jpg",
-                            Nome = "The Legend of Zelda: Majora's Mask",
-                            DataLancamento = DateTime.Now,
-                            Id_Dev = 1
-                        },
-                        new Jogo()
-                        {
-                            CapaImg = "https://cdn.mobygames.com/covers/4045638-the-legend-of-zelda-nes-front-cover.jpg",
-                            Nome = "The Legend of Zelda",
-                            DataLancamento = DateTime.Now,
-                            Id_Dev = 1
-                        },
-                        new Jogo()
-                        {
-                            CapaImg = "https://cdn.mobygames.com/covers/4756691-the-legend-of-zelda-ocarina-of-time-nintendo-64-front-cover.jpg",
-                            Nome = "The Legend of Zelda: Ocarina of Time",
-                            DataLancamento = DateTime.Now,
-                            Id_Dev = 1
-                        },
-
-                    }) ;
-                    context.SaveChanges();
-                }
+                
 
                 
 
@@ -91,34 +62,41 @@ namespace projeto_mvc.Data
                     context.SaveChanges();
                 }
 
-                //PlataformaJogos
-                if (!context.PlataformaJogos.Any())
-                {
-                    context.PlataformaJogos.AddRange(new List<Plataforma_Jogo>()
-                    {
-                        new Plataforma_Jogo()
-                        {
-                            PlataformaId = 2,
-                            JogoId = 2
-                        },
-                        new Plataforma_Jogo()
-                        {
-                            PlataformaId = 1,
-                            JogoId = 3
+				//Jogo
+				if (!context.Jogos.Any())
+				{
+					context.Jogos.AddRange(new List<Jogo>()
+					{
+						new Jogo()
+						{
+							CapaImg = "https://cdn.mobygames.com/covers/4046688-the-legend-of-zelda-majoras-mask-nintendo-64-front-cover.jpg",
+							Nome = "The Legend of Zelda: Majora's Mask",
+							DataLancamento = DateTime.Now,
+							Id_Dev = 1,
+							Id_Plataforma = 2
+						},
+						new Jogo()
+						{
+							CapaImg = "https://cdn.mobygames.com/covers/4045638-the-legend-of-zelda-nes-front-cover.jpg",
+							Nome = "The Legend of Zelda",
+							DataLancamento = DateTime.Now,
+							Id_Dev = 1,
+							Id_Plataforma = 1
+						},
+						new Jogo()
+						{
+							CapaImg = "https://cdn.mobygames.com/covers/4756691-the-legend-of-zelda-ocarina-of-time-nintendo-64-front-cover.jpg",
+							Nome = "The Legend of Zelda: Ocarina of Time",
+							DataLancamento = DateTime.Now,
+							Id_Dev = 1,
+							Id_Plataforma = 2
+						},
 
-                        },
-                        new Plataforma_Jogo()
-                        {
-
-                            PlataformaId = 2,
-                            JogoId = 4
-                        }
-                    });
-                    context.SaveChanges();
-                }
-
-                //Pessoas
-                if (!context.Pessoas.Any())
+					}); ;
+					context.SaveChanges();
+				}
+				//Pessoas
+				if (!context.Pessoas.Any())
                 {
                     context.Pessoas.AddRange(new List<Pessoa>()
                     {

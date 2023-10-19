@@ -38,7 +38,11 @@
 					<input asp-for="Id_Dev" class="form-control" />
 					<span asp-validation-for="Id_Dev" class="text-danger"></span>
 				</div>
-
+					<div class="form-group">
+						<label asp-for="Id_Plataforma" class="control-label"></label>
+						<input asp-for="Id_Plataforma" class="form-control" />
+						<span asp-validation-for="Id_Plataforma" class="text-danger"></span>
+					</div>
 				<div class="form-group">
 					<input type="submit" value="Create" class="btn btn-outline-success float-right" />
 					<a class="btn btn-outline-secondary voltar" asp-action="Index">lista de jogos</a>

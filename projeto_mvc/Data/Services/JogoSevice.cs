@@ -26,7 +26,7 @@ namespace projeto_mvc.Data.Services
 
         public IEnumerable<Jogo> GetAll()
         {
-            var resultado = _context.Jogos.Include(n => n.desenvolvedor).Include(n => n.plataformas).ToList();
+            var resultado = _context.Jogos.Include(n => n.desenvolvedor).Include(n => n.plataforma).ToList();
 
             return resultado;
         }

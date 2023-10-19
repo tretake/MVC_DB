@@ -22,21 +22,6 @@ namespace projeto_mvc.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("JogoPlataforma", b =>
-                {
-                    b.Property<int>("jogosId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("plataformasId")
-                        .HasColumnType("int");
-
-                    b.HasKey("jogosId", "plataformasId");
-
-                    b.HasIndex("plataformasId");
-
-                    b.ToTable("JogoPlataforma");
-                });
-
             modelBuilder.Entity("projeto_mvc.Models.Desenvolvedor", b =>
                 {
                     b.Property<int>("Id")
@@ -55,7 +40,7 @@ namespace projeto_mvc.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Desenvolvedores");
+                    b.ToTable("Desenvolvedores", (string)null);
                 });
 
             modelBuilder.Entity("projeto_mvc.Models.Jogo", b =>
@@ -76,6 +61,9 @@ namespace projeto_mvc.Migrations
                     b.Property<int>("Id_Dev")
                         .HasColumnType("int");
 
+                    b.Property<int>("Id_Plataforma")
+                        .HasColumnType("int");
+
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -84,7 +72,9 @@ namespace projeto_mvc.Migrations
 
                     b.HasIndex("Id_Dev");
 
-                    b.ToTable("Jogos");
+                    b.HasIndex("Id_Plataforma");
+
+                    b.ToTable("Jogos", (string)null);
                 });
 
             modelBuilder.Entity("projeto_mvc.Models.Pessoa", b =>
@@ -105,7 +95,7 @@ namespace projeto_mvc.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Pessoas");
+                    b.ToTable("Pessoas", (string)null);
                 });
 
             modelBuilder.Entity("projeto_mvc.Models.Plataforma", b =>
@@ -133,37 +123,7 @@ namespace projeto_mvc.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Plataformas");
-                });
-
-            modelBuilder.Entity("projeto_mvc.Models.Plataforma_Jogo", b =>
-                {
-                    b.Property<int>("JogoId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("PlataformaId")
-                        .HasColumnType("int");
-
-                    b.HasKey("JogoId", "PlataformaId");
-
-                    b.HasIndex("PlataformaId");
-
-                    b.ToTable("PlataformaJogos");
-                });
-
-            modelBuilder.Entity("JogoPlataforma", b =>
-                {
-                    b.HasOne("projeto_mvc.Models.Jogo", null)
-                        .WithMany()
-                        .HasForeignKey("jogosId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("projeto_mvc.Models.Plataforma", null)
-                        .WithMany()
-                        .HasForeignKey("plataformasId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.ToTable("Plataformas", (string)null);
                 });
 
             modelBuilder.Entity("projeto_mvc.Models.Jogo", b =>
@@ -174,24 +134,13 @@ namespace projeto_mvc.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("desenvolvedor");
-                });
-
-            modelBuilder.Entity("projeto_mvc.Models.Plataforma_Jogo", b =>
-                {
-                    b.HasOne("projeto_mvc.Models.Jogo", "jogo")
-                        .WithMany("plataforma_jogos")
-                        .HasForeignKey("JogoId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
                     b.HasOne("projeto_mvc.Models.Plataforma", "plataforma")
-                        .WithMany("plataforma_jogos")
-                        .HasForeignKey("PlataformaId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .WithMany("jogos")
+                        .HasForeignKey("Id_Plataforma")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("jogo");
+                    b.Navigation("desenvolvedor");
 
                     b.Navigation("plataforma");
                 });
@@ -201,14 +150,9 @@ namespace projeto_mvc.Migrations
                     b.Navigation("jogos");
                 });
 
-            modelBuilder.Entity("projeto_mvc.Models.Jogo", b =>
-                {
-                    b.Navigation("plataforma_jogos");
-                });
-
             modelBuilder.Entity("projeto_mvc.Models.Plataforma", b =>
                 {
-                    b.Navigation("plataforma_jogos");
+                    b.Navigation("jogos");
                 });
 #pragma warning restore 612, 618
         }

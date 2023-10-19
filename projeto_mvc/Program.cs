@@ -12,6 +12,8 @@ builder.Services.AddDbContext<ProjetoContext>(options =>
 
 
 builder.Services.AddScoped<IJogoSevice, JogoSevice>();
+builder.Services.AddScoped<IPlataformaSevice, PlataformaSevice>();
+
 
 builder.Services.AddControllersWithViews();
 

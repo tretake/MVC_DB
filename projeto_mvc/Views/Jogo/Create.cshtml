@@ -1,0 +1,72 @@
+﻿@model Jogo
+
+@{
+	ViewData["Title"] = "adicionar um jogo";
+}
+
+
+<div class="row text">
+	<div class="col-md-8 offset-2">
+		<h1>adicionar jogo</h1>
+
+		<div class="row">
+			<div class="col-md-8 offset-2">
+				<form asp-action="Create">
+					<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+				
+
+				<div class="form-group">
+					<img id="CapaPreview"/>
+				</div>
+				<div class="form-group">
+					<label asp-for="CapaImg" class="control-label"></label>
+					<input asp-for="CapaImg" class="form-control"/>
+					<span asp-validation-for="CapaImg" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<label asp-for="Nome" class="control-label"></label>
+					<input asp-for="Nome" class="form-control" />
+					<span asp-validation-for="Nome" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<label asp-for="DataLancamento" class="control-label"></label>
+					<input asp-for="DataLancamento" class="form-control" />
+					<span asp-validation-for="DataLancamento" class="text-danger"></span>
+				</div>
+				<div class="form-group">
+					<label asp-for="Id_Dev" class="control-label"></label>
+					<input asp-for="Id_Dev" class="form-control" />
+					<span asp-validation-for="Id_Dev" class="text-danger"></span>
+				</div>
+
+				<div class="form-group">
+					<input type="submit" value="Create" class="btn btn-outline-success float-right" />
+					<a class="btn btn-outline-secondary voltar" asp-action="Index">lista de jogos</a>
+				</div>
+				
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+@section Scripts {
+	<script>
+		$(document).ready(function () 
+		{
+			var output = document.getElementById('CapaPreview');
+			output.src = $(CapaImg).val();
+
+		})
+
+		$("#CapaImg").on("change", function () 
+		{ 
+			var output = document.getElementById('CapaPreview');
+			output.src = $(this).val();
+		})
+	</script>
+
+}

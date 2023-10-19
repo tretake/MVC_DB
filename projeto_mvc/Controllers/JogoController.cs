@@ -1,21 +1,39 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using projeto_mvc.Data;
+using projeto_mvc.Data.Services;
+using projeto_mvc.Models;
 
 namespace projeto_mvc.Controllers
 {
     public class JogoController : Controller
     {
-        private readonly ProjetoContext _context;
-        public JogoController(ProjetoContext context)
+        private readonly IJogoSevice _service;
+        public JogoController(IJogoSevice service)
         {
-            _context = context;
+            _service = service;
         }
 
         public IActionResult Index()
         {
-            var dados = _context.Jogos.Include(n => n.desenvolvedor).Include(n => n.plataformas).ToList();
+            var dados = _service.GetAll();
             return View(dados);
         }
-    }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create([Bind("CapaImg,Nome,DataLancamento,Id_Dev")] Jogo Pjogo)
+		{
+            if(!ModelState.IsValid)
+            {
+				return View(Pjogo);
+			}
+            _service.Add(Pjogo);
+            return RedirectToAction(nameof(Index));
+		}
+	}
 }

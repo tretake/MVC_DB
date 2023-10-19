@@ -8,16 +8,23 @@ namespace projeto_mvc.Models
 
         [Key]
         public int Id { get; set; }
+
+        [Required(ErrorMessage ="jogo precias de uma capa")]
         public string CapaImg { get; set; }
-        public string Nome { get; set; }
-        public DateTime DataLancamento { get; set;}
+
+		[Required(ErrorMessage = "jogo precisa de um nome")]
+		public string Nome { get; set; }
+
+		[Required(ErrorMessage = "jogo precias de uma data de lançamento")]
+		public DateTime DataLancamento { get; set;}
 
 
-        //RELAÇÕES
+		//RELAÇÕES
 
-      
-        //DEVELOPER
-        public int Id_Dev {  get; set; }
+
+		//DEVELOPER
+		[Required(ErrorMessage = "jogo precias de um desenvolvedor")]
+		public int Id_Dev {  get; set; }
 
         [ForeignKey("Id_Dev")]
         public Desenvolvedor desenvolvedor { get; set; }

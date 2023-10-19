@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using projeto_mvc.Data;
+using projeto_mvc.Data.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ProjetoContext>(options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionString") ) );
 
+
+builder.Services.AddScoped<IJogoSevice, JogoSevice>();
 
 builder.Services.AddControllersWithViews();
 

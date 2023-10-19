@@ -16,3 +16,12 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.form-group {
+    padding: 5px;
+}
+
+.float-right {
+
+    float: right;
+}

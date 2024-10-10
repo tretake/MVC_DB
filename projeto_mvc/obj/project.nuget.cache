@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MzGUpcQ14NpyRvD2ymaTT1DkSNoHchVDDcrG+jWvMVYlhCjy5noDpAsLj/0JfeAXCxgSgzRd3CZi2v9sZnM2Tg==",
+  "dgSpecHash": "bpy/J6Gbiwjm/W1wsMV9nAURodnm+OB3iXuzD5/MDBk1jDk67PWMDfjxu6hSViljU9ixIFIOnHHKQkBrHApNXQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ruanl\\OneDrive\\Desktop\\git\\MVC_DB\\projeto_mvc\\projeto_mvc.csproj",
+  "projectFilePath": "C:\\Users\\ruanl\\OneDrive\\Desktop\\Programação\\git\\web\\MVC_DB\\projeto_mvc\\projeto_mvc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ruanl\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\ruanl\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

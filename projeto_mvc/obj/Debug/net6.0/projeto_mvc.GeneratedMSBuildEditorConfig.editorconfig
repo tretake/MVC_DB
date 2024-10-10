@@ -9,61 +9,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = projeto_mvc
 build_property.RootNamespace = projeto_mvc
-build_property.ProjectDir = C:\Users\ruanl\OneDrive\Desktop\git\MVC_DB\projeto_mvc\
+build_property.ProjectDir = C:\Users\ruanl\OneDrive\Desktop\Programação\git\web\MVC_DB\projeto_mvc\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ruanl\OneDrive\Desktop\git\MVC_DB\projeto_mvc
+build_property.MSBuildProjectDirectory = C:\Users\ruanl\OneDrive\Desktop\Programação\git\web\MVC_DB\projeto_mvc
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ruanl/OneDrive/Desktop/git/MVC_DB/projeto_mvc/Views/Desenvolvedor/Index.cshtml]
+[C:/Users/ruanl/OneDrive/Desktop/Programação/git/web/MVC_DB/projeto_mvc/Views/Desenvolvedor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzZW52b2x2ZWRvclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ruanl/OneDrive/Desktop/git/MVC_DB/projeto_mvc/Views/Home/Index.cshtml]
+[C:/Users/ruanl/OneDrive/Desktop/Programação/git/web/MVC_DB/projeto_mvc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ruanl/OneDrive/Desktop/git/MVC_DB/projeto_mvc/Views/Home/Privacy.cshtml]
+[C:/Users/ruanl/OneDrive/Desktop/Programação/git/web/MVC_DB/projeto_mvc/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ruanl/OneDrive/Desktop/git/MVC_DB/projeto_mvc/Views/Jogo/Create.cshtml]
+[C:/Users/ruanl/OneDrive/Desktop/Programação/git/web/MVC_DB/projeto_mvc/Views/Jogo/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ruanl/OneDrive/Desktop/git/MVC_DB/projeto_mvc/Views/Jogo/Index.cshtml]
+[C:/Users/ruanl/OneDrive/Desktop/Programação/git/web/MVC_DB/projeto_mvc/Views/Jogo/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ruanl/OneDrive/Desktop/git/MVC_DB/projeto_mvc/Views/Pessoa/Index.cshtml]
+[C:/Users/ruanl/OneDrive/Desktop/Programação/git/web/MVC_DB/projeto_mvc/Views/Pessoa/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzc29hXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ruanl/OneDrive/Desktop/git/MVC_DB/projeto_mvc/Views/Plataforma/Create.cshtml]
+[C:/Users/ruanl/OneDrive/Desktop/Programação/git/web/MVC_DB/projeto_mvc/Views/Plataforma/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhdGFmb3JtYVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ruanl/OneDrive/Desktop/git/MVC_DB/projeto_mvc/Views/Plataforma/Index.cshtml]
+[C:/Users/ruanl/OneDrive/Desktop/Programação/git/web/MVC_DB/projeto_mvc/Views/Plataforma/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhdGFmb3JtYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ruanl/OneDrive/Desktop/git/MVC_DB/projeto_mvc/Views/Shared/Error.cshtml]
+[C:/Users/ruanl/OneDrive/Desktop/Programação/git/web/MVC_DB/projeto_mvc/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ruanl/OneDrive/Desktop/git/MVC_DB/projeto_mvc/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/ruanl/OneDrive/Desktop/Programação/git/web/MVC_DB/projeto_mvc/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ruanl/OneDrive/Desktop/git/MVC_DB/projeto_mvc/Views/_ViewImports.cshtml]
+[C:/Users/ruanl/OneDrive/Desktop/Programação/git/web/MVC_DB/projeto_mvc/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ruanl/OneDrive/Desktop/git/MVC_DB/projeto_mvc/Views/_ViewStart.cshtml]
+[C:/Users/ruanl/OneDrive/Desktop/Programação/git/web/MVC_DB/projeto_mvc/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ruanl/OneDrive/Desktop/git/MVC_DB/projeto_mvc/Views/Shared/_Layout.cshtml]
+[C:/Users/ruanl/OneDrive/Desktop/Programação/git/web/MVC_DB/projeto_mvc/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-hxypc7s6s6
